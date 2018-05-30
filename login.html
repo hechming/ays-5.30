@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var c = "o",
+			fn;
+			var test = {
+				a:{
+					c:"a",
+					b:function(){
+						console.log(this.c);
+					}
+				},
+				b:function(){
+					console.log(this.c);
+				},
+				c:"i"
+			}
+			test.a.b();
+			(test.a.b)();
+			(fn=test.a.b)();
+			test.b();
+			test.b.call(test.a);
+			test.b(test.a)
+			test.b(test.b)
+		</script>
+	</body>
+</html>
