@@ -2,8 +2,42 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>用户注册--爱婴室官网</title>
+		<link rel="stylesheet" type="text/css" href="css/register.min.css"/>
 	</head>
 	<body>
+		<script src="src/js/register.js"></script>
+		<div class="logo">
+			<a href="index.html"><img src="img/logo.jpg" alt="#" /></a>
+		</div>
+		<div class="top1">
+			<h3>新用户注册</h3>
+		</div>
+		<div class="middle clear">
+			<div class="mi_left">
+				<a href="#">
+					<img src="img/201401150614032506.jpg" alt="#" class="lt_1"/>
+					<img src="img/201401150614582037.jpg" alt="#" class="lt_2"/>
+				</a>
+			</div>
+			<form action="#">
+				<p>账号名: <input type="text" name="txt-re" id="txt-re" value="" placeholder="手机号"/></p>
+				<p>密码: <input type="password" name="psw-re" id="psw-re" value="" /></p>
+				<p>确认密码: <input type="password" name="psw-re1" id="psw-re1" value="" /></p>
+				<p>验证码: <input type="text" name="txt-yan" id="txt-yan" value="" /><input type="button" name="code" id="code" value="" onclick="createCode()" />
+				</p>
+				<img src="img/linnnnn.jpg" alt="#" /><br />
+				<p class="form_1"><input type="checkbox" id="box2"/><label for="box2">我已阅读并同意</label><a href="#">《爱婴室用户注册协议》</a><br />本人自愿接收爱婴室通过短信、APP等方式向我推送的各类爱婴室会员增值服务、会员优惠促销、会员互动等信息。</p>
+				<p class="tip-error clear"><i></i><span></span></p>
+				<p class="form_2 clear"><span>我已经注册<br />现在就<a href="login.html">登录</a></span><a href="#" class="requested"><img src="img/zuce_09.jpg" alt="#" /></a></p>
+			</form>
+		</div>
+		
+		<div class="bottom-1">
+			<p class="link1"><a href="index.html">首页</a>|<a href="#">关于我们</a>|<a href="#">诚聘英才</a>|<a href="#">服务条款</a>|<a href="#">安全说明</a>|<a href="#">隐私声明</a>|<a href="#">友情链接</a>|<a href="#">供货标准</a></p>
+			<p><b>本网站版权属于 上海爱婴室商务服务股份有限公司</b></p>
+			<span>沪ICP备<i>0061083</i>号<b>上海工商</b></span>
+		</div>
+		<div class="last"></div>	
 	</body>
 </html>

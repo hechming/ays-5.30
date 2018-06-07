@@ -8,9 +8,13 @@ const concat = require("gulp-concat");//合并Js
 
 //编译scss//寻找源文件//编译sass//重命名//压缩css
 gulp.task("sass",function(){
-	gulp.src("src/scss/*.scss").pipe(sass()).pipe(rename({"suffix":".min"})).pipe(cssnano()).pipe(gulp.dest("css"));
+	gulp.src("src/scss/*.scss").pipe(sass().on("error",sass.logError)).pipe(rename({"suffix":".min"})).pipe(cssnano()).pipe(gulp.dest("css"));
 })
 //压缩js，重命名js，合并js
 gulp.task("js",function(){
 	gulp.src("src/js/*.js").pipe(uglify()).pipe(rename({"suffix":".min"})).pipe(concat("all.min.js")).pipe(gulp.dest("js"))
+})
+//监控
+gulp.task("watch",function(){
+	gulp.watch(["src/scss/*.scss","src/js/*.js"],["sass","js"]);
 })

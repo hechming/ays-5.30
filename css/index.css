@@ -180,6 +180,7 @@ li{
 .msg #btn1{
 	width:13px;
 	height:13px;
+	border:1px solid gray;
 	background:url(../img/index_ico1.png) -50px -42px no-repeat;
 	float:right;
 	margin-top:0px;
@@ -188,6 +189,7 @@ li{
 .msg #btn2{
 	width:13px;
 	height:13px;
+	border:1px solid gray;
 	background:url(../img/index_ico1.png) -50px -57px no-repeat;
 	float:right;
 	margin-top:17px;

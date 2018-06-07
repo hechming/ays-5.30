@@ -1,0 +1,118 @@
+@import "public";
+
+.logo{
+    width:963px;
+    margin:0 auto;
+    img{
+        width:140px;
+        height:60px;
+    }
+}
+.top1{
+    height:31px;
+    width:963px;
+    margin:0 auto;
+    border-radius: 5px 5px 0 0;
+    background:url(../img/zuce_05.jpg) no-repeat;
+    h3{
+        color:#fff;
+        font-size:16px; 
+        margin-left:16px;
+        line-height: 31px;
+    }
+}
+.middle{
+    width:919px;
+    padding:20px;
+    border:2px solid #58cce9;
+    margin:0 auto;
+    .mi_left{
+        float:left;
+        width:500px;
+        height:333px;
+        padding-right:16px;
+        border-right:1px solid #d9d9d9;
+        .lt_1{
+            float:left;
+        } 
+        .lt_2{
+            float:right;
+        }
+    }
+    form{
+        float:right;
+        p{
+            text-align: right;
+            width:300px;
+            margin-top:16px;
+            font-size:12px;
+            color:#8b8b8b;
+        }
+        input{
+            margin-right:70px;
+            height:18px;
+        }
+        #code{
+            position: absolute;
+            width: 76px;
+            height:30px;
+            right: 226px;
+            font-family:Arial;  
+            font-style:italic;  
+            font-weight:bold;  
+            border:0;  
+            letter-spacing:2px;  
+            color:blue;
+        }
+    }
+}
+form .tip-error{
+    width:180px;
+    display: none;
+    margin-left:60px;
+    i{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        float:left;
+        background: url(../img/error.png) no-repeat;
+    }
+    span{
+        color:red;
+        float:left;
+    }
+}
+#txt-yan{
+    width:86px!important;
+    margin-right:154px;
+}
+.form_1{
+    text-align: left!important;
+    width:326px!important;
+    #box2{
+        margin-right:2px;
+    }
+    a{
+        color:#8b8b8b;
+        text-decoration:none;
+    }
+}
+.form_2{
+    text-align:left!important;
+    width:280px!important;
+    span{
+        float:left;
+        width:70px;
+        height:34px;
+    }
+    img{
+        float:right;
+    }  
+}
+.link1{
+    color:#888;
+    a{
+        color:#888;
+        padding:0 4px;
+    }
+}
